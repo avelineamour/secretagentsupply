@@ -55,21 +55,106 @@ header span {
   width: 20rem;
   position: relative;
   top: 9rem;
+  padding: 2rem 3rem;
 
 }
 
-h3, h1 {
+h4, h1 {
   color: white;
-  padding-left: 3rem;
   font-weight: bold;
 }
 
-h3 {
-  padding-top: 2rem;
+h4 {
   font-size: 1rem;
 }
 
 h1 {
   padding-top: 0.25rem;
   font-size: 2rem;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: firebrick;
+  width: 100%
+}
+
+.navcontainer {
+  display: flex;
+  width: 960px;
+  justify-content: space-between;
+  padding: 0.75rem 0rem;
+}
+
+a {
+  color: white;
+}
+
+a:visited {
+  color: white;
+}
+
+a:hover {
+  color: lightyellow;
+}
+
+.maincontainer {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  width: 100%;
+  border: solid black 1px;
+
+}
+
+.gadgetcontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 960px;
+  padding-top: 3rem;
+  overflow: hidden;
+}
+
+.gadgets {
+  display: flex;
+  flex-direction: column;
+  border: solid black 4px;
+  width: 30%;
+}
+
+.gadgets img {
+  height: 9rem;
+  padding: 2rem 0rem;
+}
+
+.gadgets span {
+  background-color: black;
+  color: white;
+  width: 100%;
+  text-align: center;
+  padding: 0.5rem 0rem;
+}
+
+.infobar {
+  background-color: black;
+  color: white;
+  padding: 1rem 2rem;
+}
+
+.infocontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 960px;
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  width: 35%
 }
