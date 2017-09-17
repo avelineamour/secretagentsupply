@@ -109,7 +109,7 @@ a:hover {
 
 }
 
-.gadgetcontainer {
+.gadgetrow {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -121,13 +121,20 @@ a:hover {
 .gadgets {
   display: flex;
   flex-direction: column;
+  align-items: center;
   border: solid black 4px;
   width: 30%;
 }
 
-.gadgets img {
+.image  {
   height: 9rem;
   padding: 2rem 0rem;
+  display: flex;
+  align-items: center;
+}
+
+.gadgets img {
+  max-width: 9rem;
 }
 
 .gadgets span {
@@ -142,6 +149,7 @@ a:hover {
   background-color: black;
   color: white;
   padding: 1rem 2rem;
+  margin-bottom: 0.5rem;
 }
 
 .infocontainer {
@@ -157,4 +165,22 @@ a:hover {
   display: flex;
   flex-direction: column;
   width: 35%
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5rem;
+  background-color: black;
+  width: 100%
+}
+
+.copyright {
+  width: 960px;
+}
+
+.copyright span {
+  text-align: left;
+  color: white;
 }
