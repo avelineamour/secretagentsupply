@@ -222,8 +222,8 @@ footer {
 /* Mobile Rules */
 
 @media only screen
-and (max-width: 400px)
-and (min-width: 320px)
+and (max-width: 300px)
+
 and (orientation: portrait) {
   .gadget1,
   .gadget2,
