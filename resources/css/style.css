@@ -87,6 +87,10 @@ nav {
   padding: 0.75rem 0rem;
 }
 
+#mobilenav {
+  display: none;
+}
+
 a {
   color: white;
 }
@@ -105,7 +109,6 @@ a:hover {
   align-content: center;
   align-items: center;
   width: 100%;
-  border: solid black 1px;
 
 }
 
@@ -118,7 +121,9 @@ a:hover {
   overflow: hidden;
 }
 
-.gadgets {
+.gadget1,
+.gadget2,
+.gadget3 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -133,23 +138,20 @@ a:hover {
   align-items: center;
 }
 
-.gadgets img {
+.gadget1 img,
+.gadget2 img,
+.gadget3 img {
   max-width: 9rem;
 }
 
-.gadgets span {
+.gadget1 span,
+.gadget2 span,
+.gadget3 span {
   background-color: black;
   color: white;
   width: 100%;
   text-align: center;
   padding: 0.5rem 0rem;
-}
-
-.infobar {
-  background-color: black;
-  color: white;
-  padding: 1rem 2rem;
-  margin-bottom: 0.5rem;
 }
 
 .infocontainer {
@@ -165,6 +167,13 @@ a:hover {
   display: flex;
   flex-direction: column;
   width: 35%
+}
+
+.infobar {
+  background-color: black;
+  color: white;
+  padding: 1rem 2rem;
+  margin-bottom: 0.5rem;
 }
 
 footer {
@@ -183,4 +192,103 @@ footer {
 .copyright span {
   text-align: left;
   color: white;
+}
+
+/*Tablet Rules*/
+
+@media only screen and (max-width: 1024px){
+  .gadget1,
+  .gadget2 {
+    width: 47%;
+  }
+  .gadget3 {
+    display: none;
+  }
+  nav {
+    display: none;
+  }
+  #mobilenav {
+    display: flex;
+  }
+
+  #mobilenavcontainer {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      padding: 0.75rem 0rem;
+    }
+}
+
+/* Mobile Rules */
+
+@media only screen and (max-width: 470px){
+  .gadget1,
+  .gadget2,
+  .gadget3 {
+    width: 90%;
+  }
+  .gadget2,
+  .gadget3 {
+    display: none;
+  }
+  nav {
+    display: none;
+  }
+  #mobilenav {
+    display: flex;
+  }
+
+  #mobilenavcontainer {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      padding: 0.75rem 0rem;
+    }
+
+    .banner {
+      height: 15rem;
+      flex-direction: column;
+      justify-content: flex-end;
+      width: 100%;
+    }
+
+    .bannercontainer {
+      width: 100%;
+    }
+
+    .bannerbox {
+      top: 0rem;
+      padding: 1rem 2rem;
+      width: 100%;
+    }
+
+    h4 {
+      font-size: 0.77rem;
+    }
+
+    h1 {
+      font-size: 1rem;
+    }
+
+    .info {
+      width: 90%;
+      padding-top: 0.5rem;
+    }
+
+    .infocontainer {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+    }
+
+    .gadgetrow {
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+}
+    .copyright {
+      text-align: center;
+    }
+
 }
