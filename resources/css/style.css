@@ -197,8 +197,7 @@ footer {
 /*Tablet Rules*/
 
 @media only screen
-and (max-width: 1024px)
-and (min-width: 768px){
+and (max-width: 1024px){
   .gadget1,
   .gadget2 {
     width: 47%;
@@ -259,6 +258,7 @@ and (orientation: portrait) {
 
     .bannercontainer {
       width: 100%;
+      display: flex;
     }
 
     .bannerbox {
